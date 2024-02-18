@@ -1,0 +1,31 @@
+{
+  "name": "comphp/config-php",
+  "type": "library",
+  "description": "Provides functionality necessary for working with PHP configuration files",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "timothy.mcclatchey",
+      "email": "timothy@commonphp.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CommonPHP\\Configuration\\Drivers\\PhpConfigurationDriver\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CommonPHP\\Tests\\Drivers\\PhpConfigurationDriver\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.3",
+    "comphp/config": "^0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5.9",
+    "phpstan/phpstan": "^1.10.58",
+    "phpmd/phpmd": "^2.13"
+  }
+}
